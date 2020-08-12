@@ -2,11 +2,14 @@ CREATE burgers_db;
 
 USE burgers_db;
 
-CREATE Table burgers;
+CREATE Table burgers
 
 (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id INTEGER
+    AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR
-(25) NOT NULL,
+    (25) NOT NULL,
     devoured BOOLEAN,
+    PRIMARY KEY
+    (id)
 );
