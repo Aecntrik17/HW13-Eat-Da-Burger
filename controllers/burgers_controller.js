@@ -1,4 +1,5 @@
 const express = require("express");
+// connecting to the model
 const burger = require("../models/burger");
 
 const router = express.Router();
