@@ -1,6 +1,7 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 
+// set up the connection information but allowing to choose external or local host
 let connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -14,7 +15,7 @@ if (process.env.JAWSDB_URL) {
   });
 }
 
-// Make connection.
+// Make connection to the database
 connection.connect(function (err) {
   if (err) {
     console.error("error connecting: " + err.stack);
